@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaTech - Instituto Superior</title>
+  
+  <!-- Fuente de Google (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tu CSS principal -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="img/mi-logo.png" alt="Logo EducaTech" class="logo-img">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Programas</a></li>
+          <li><a href="#">Beneficios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#registro" class="btn btn-green">Registrarse</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Forma tu futuro con educación de calidad</h1>
+        <p>Programas técnicos superiores diseñados para impulsar tu desarrollo profesional y personal.</p>
+        <div class="hero-buttons">
+          <a href="#programas" class="btn btn-blue">Conoce nuestros programas</a>
+          <a href="#" class="btn btn-white">Contáctanos</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Estudiante">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN BENEFICIOS Y FORMULARIO -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">¿Por qué estudiar con nosotros?</h2>
+      
+      <div class="features-layout">
+        <!-- Beneficios Izquierda -->
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-graduation-cap icon-blue"></i>
+            <h3>Educación de calidad</h3>
+            <p>Docentes especializados y programas actualizados.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-briefcase icon-green"></i>
+            <h3>Oportunidades reales</h3>
+            <p>Convenios con empresas y bolsa de trabajo.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-laptop icon-yellow"></i>
+            <h3>Modalidad flexible</h3>
+            <p>Estudia a tu ritmo con nuestros horarios flexibles.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-users icon-purple"></i>
+            <h3>Acompañamiento</h3>
+            <p>Te apoyamos en cada paso de tu formación.</p>
+          </div>
+        </div>
+
+        <!-- Formulario Derecha -->
+        <div class="form-container" id="registro">
+          <h3>Regístrate ahora</h3>
+          <p>Déjanos tus datos y recibe información sobre nuestros programas.</p>
+          
+          <form id="formulario">
+            <div class="input-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez García" required>
+            </div>
+
+            <div class="input-group">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="input-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej. +51 987654321" required>
+            </div>
+
+            <div class="input-group">
+              <label for="carrera">Programa de interés</label>
+              <select id="carrera" name="carrera" required>
+                <option value="">Cargando programas...</option>
+              </select>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="acepto" name="acepto" required>
+              <label for="acepto">Acepto los términos y condiciones</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar registro</button>
+            <p id="mensaje"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PROGRAMAS -->
+  <section class="programs-section" id="programas">
+    <div class="container">
+      <h2 class="section-title">Nuestros Programas</h2>
+      
+      <!-- JavaScript llenará este div automáticamente con los datos de Google Sheets -->
+      <div class="programs-grid" id="contenedor-programas">
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo logo-white">
+          <img src="img/mi-logo.png" alt="Logo EducaTech" class="logo-img">
+        </div>
+        <p>Formamos profesionales técnicos con valores, capaces de transformar su entorno.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Programas</a></li>
+          <li><a href="#">Beneficios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contactos</h3>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-location-dot"></i> Av. Siempre Preparados, Ciudad</li>
+          <li><i class="fa-solid fa-phone"></i> +51 921 076 073</li>
+          <li><i class="fa-solid fa-envelope"></i> info@educatech.edu.pe</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Síguenos</h3>
+        <p>Mantente conectado con nuestras novedades.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Tu correo electrónico">
+          <button type="button">Suscribirse</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Erick Huaman Becerra Rommel. ING.software</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
